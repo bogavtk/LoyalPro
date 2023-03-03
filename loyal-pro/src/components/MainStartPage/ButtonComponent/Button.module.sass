@@ -6,7 +6,6 @@
 
 .borderBlur::before
   content: ''
-  width: 260px
   height: 55px
   border: inherit
   filter: blur(12.5px)
@@ -18,10 +17,8 @@
   z-index: 1
 
 
+.borderOutMain, .borderOutAuth, .borderOutLogin
 
-
-.buttonMain
-  width: 260px
   height: 49px
   border: 2px solid #5DB1FF
   border-radius: 100px
@@ -37,5 +34,14 @@
   position: relative
   z-index: 2
 
-.buttonMain img
-  padding-left: 7px
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.borderOutAuth, .borderBlur
+  width: 260px
+
+.borderOutAuth, .buttonAuthModal
+  width: 420px
+
